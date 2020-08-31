@@ -1,0 +1,119 @@
+body {
+    color: #40514E;
+    
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
+    
+}
+
+h1{  
+    color: black;
+    font-size: 75px;
+    font-family: 'Merriweather', serif;
+    line-height: 2;
+    margin: 50px auto 0 auto;
+    
+}
+h2 {
+    color: black;
+    font-size: 2.5 rem;    
+    
+    padding-bottom: 10px;
+}
+
+div {
+    position: relative;
+}
+p{
+    line-height :2;
+}
+hr{
+    border: dotted #EAF6F6 6px;
+    border-bottom: none;
+    width: 4%;
+    margin: 100px auto;
+}
+a{
+    color: black;
+    
+    margin: 10px 20px;
+    text-decoration: none;
+}
+a:hover{
+    color:gainsboro;
+}
+.top-container {
+    background-color: #ffd460;
+    
+    position:relative;
+    
+}
+.middle-container {
+   margin: 100 0;
+   background-color: whitesmoke;
+}
+.bottom-container {
+ background-color: #ffd460;
+ padding: 50px 0 20px;
+}
+.productos-container{
+    background-color: rgb(247, 140, 53);
+    position: relative;
+}
+.acerca-row {
+    margin: 100px auto 100px auto;
+    text-align: left;
+    
+    width: 50%
+    
+}
+.pro {
+    text-decoration: underline;
+}
+.intro{
+    width: 30%;
+    margin:auto;
+}
+.contact-me{
+    margin: 40px auto 60px;
+    width: 40%
+}
+.copyright{
+    color:whitesmoke;
+    font-size:0.75rem;
+    padding: 20px 0;
+}
+.data-img{
+    width: 25%;
+    float: left;
+    margin-right: 30px;
+}
+.datas-img{
+    float:right;
+    width: 25%;
+    margin-left: 30px;
+}
+.fideosyhuevo{
+    width: 85%;
+    height:54%;
+}
+.sorrentinosalsa{
+    width:85%;
+    height:50%;
+}
+.logo{
+    width: 105%;
+    height: 50%;
+    
+    
+}
+
+
+.btn:hover {
+	background-color:#41443f;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
