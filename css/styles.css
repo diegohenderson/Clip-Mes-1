@@ -28,20 +28,12 @@ div {
 p{
     line-height :2;
 }
-hr{
-    border: dotted #EAF6F6 6px;
-    border-bottom: none;
-    width: 4%;
-    margin: 100px auto;
-}
+
 a{
     color: black;
     
     margin: 10px 20px;
     text-decoration: none;
-}
-a:hover{
-    color:gainsboro;
 }
 .top-container {
     background-color: #ffd460;
@@ -80,7 +72,7 @@ a:hover{
     width: 40%
 }
 .copyright{
-    color:whitesmoke;
+    
     font-size:0.75rem;
     padding: 20px 0;
 }
@@ -89,6 +81,7 @@ a:hover{
     float: left;
     margin-right: 30px;
 }
+
 .datas-img{
     float:right;
     width: 25%;
@@ -108,8 +101,6 @@ a:hover{
     
     
 }
-
-
 .btn:hover {
 	background-color:#41443f;
 }

@@ -2,117 +2,89 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Bono's </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
 </head>
 
 <body class="bg-dark">
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
-                <a class="nav-item nav-link active" href="index.html">Bono's <span class="sr-only">(current)</span></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
+  <header class="masthead mb-auto">
+    <div class="inner">
+      <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+        <a class="nav-item nav-link active" href="index.html">Bono's <span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
 
-                        <a class="nav-item nav-link" href="recetas.html">Recetas</a>
-                        <a class="nav-item nav-link" href="contacto.html">Contacto</a>
-                    </div>
-                </div>
-            </nav>
+            <a class="nav-item nav-link" href="Adivinanza.html">Adivinanza</a>
+            <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+          </div>
         </div>
-    </header>
-    
-    <div class="row">
-        <div class="col-lg-6">
-            <h1 class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light">Dejanos tus Dudas!</h1>
-            <p class="text-light text-center">
-                Para contactarse con nosotros comunicarse al teléfono: ----- o al mail: bonospasta@gmail.com
-            </p>
-            <form class=" text-center text-light" action="Contacto.php" method="GET">
-                <label>Nombre: <br>
-                    <input type="text" required placeholder="Nombre" name="nombre" style="width: 300px;">
-                </label><br>
-                <label>Email: <br>
-                    <input type="email" required placeholder="nombre@mail.com" name="email" style="width: 300px;">
-                </label>
-                <br>
-
-                <br>
-                <label> Deseo rebibir información por correo 
-                    <input type="checkbox">
-                </label>
-                <br>
-                <br>
-                <button type="submit" class="btn btn-success">Enviar</button>
-            </form>
-        </div>
-        <div>
-            <form>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputEmail4">Email</label>
-                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-                  </div>
-                  <div class="form-group col-md-6">
-                    <label for="inputPassword4">Password</label>
-                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-                  </div>
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="form-group">
-                  <label for="inputAddress2">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="form-row">
-                  <div class="form-group col-md-6">
-                    <label for="inputCity">City</label>
-                    <input type="text" class="form-control" id="inputCity">
-                  </div>
-                  <div class="form-group col-md-4">
-                    <label for="inputState">State</label>
-                    <select id="inputState" class="form-control">
-                      <option selected>Choose...</option>
-                      <option>...</option>
-                    </select>
-                  </div>
-                  <div class="form-group col-md-2">
-                    <label for="inputZip">Zip</label>
-                    <input type="text" class="form-control" id="inputZip">
-                  </div>
-                </div>
-                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Example textarea</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                  </div>
-                <div class="form-group">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-              </form>
-        </div>
-        <div class="col-lg-6">
-            <h1 class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light"> Como Llegar? </h1>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.5584418134067!2d-64.1490248851936!3d-31.371161981419156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329828774d8045%3A0xe3d2a2fdaa347f1!2sEscolastico%20Magan%201487%2C%20X5012%20DAS%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1598888358731!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>"
-                
-        </div>
+      </nav>
     </div>
+  </header>
+  <div class="row">
+    <div class="col-lg-6">
+      <h1 class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light">Dejanos tus Dudas!</h1>
+      <p class="text-light text-center">
+        Para contactarse con nosotros comunicarse al teléfono: ----- o al mail: bonospasta@gmail.com
+      </p>
+      <form action="#" class="was-validated text-light">
+        <div class="form-row ">
+          <div class="form-group col-md-6">
+            <label for="inputEmail">Email</label>
+            <input type="email" class="form-control" maxlength="50" id="inputEmail" placeholder="Email" required>
+            <div class="valid-feedback">Ok.</div>
+            <div class="invalid-feedback">El Dato es Obligatorio</div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="Nombre">Nombre</label>
+          <input type="text" class="form-control" id="Nombre" placeholder="Nombre" required>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Mensaje</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Estoy de Acuerdo en Recibir Informacion en mi Email?
+            </label>
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+
+    <div class="col-lg-6">
+      <h1 class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center text-light"> Como Llegar? </h1>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3406.5584418134067!2d-64.1490248851936!3d-31.371161981419156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329828774d8045%3A0xe3d2a2fdaa347f1!2sEscolastico%20Magan%201487%2C%20X5012%20DAS%2C%20C%C3%B3rdoba!5e0!3m2!1ses-419!2sar!4v1598888358731!5m2!1ses-419!2sar"
+        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+        tabindex="0"></iframe>"
+
+    </div>
+  </div>
 </body>
 
 </html>

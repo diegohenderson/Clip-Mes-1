@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bono's </title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@0;1&display=swap" rel="stylesheet">
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+      crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-dark">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+                <a class="nav-item nav-link active" href="index.html">Bono's <span class="sr-only">(current)</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+
+                        <a class="nav-item nav-link" href="recetas.html">Adivinanza</a>
+                        <a class="nav-item nav-link" href="contacto.html">Contacto</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <div class="container text-white">
+        <section>
+            <p>Para iniciar a Jugar, Dinos tu nombre<input type="text" id="nombre"></p>
+            <button type="button" class="btn btn-secondary" onclick="Adivina_la_pasta()">Jugar</button>
+            <p id="resultado"></p>
+        </section>
+        <script>
+
+            function Adivina_la_pasta() {
+                var posdata = "Recuerda usar Letra Minuscula";
+                var respuesta = "sorrentinos";
+                var cant_intentos = 4;
+                var acerto = false;
+                var pista_uno = "Lleva Relleno";
+                var pista_dos = "su forma es redondeada";
+                var pista_tres = "es una de las mas grandes";
+                var mensaje;
+
+                var nombre = document.getElementById("nombre").value;
+
+                if (nombre == "") {
+                    alert("Por favor, Ingrese su nombre para Jugar");
+                }
+                else {
+                    alert("recuerde utilizar minisculas en las respuestas");
+                    while (cant_intentos > 0 && acerto == false) {
+
+                        cant_intentos--;
+                        mensaje = prompt("ingrese su respuesta");
+                        if (mensaje == respuesta) {
+                            alert("Felicitaciones has ganado");
+                            acerto = true;
+                        }
+                        else {
+                            alert("le quedan " + cant_intentos + " intentos");
+                            switch (cant_intentos) {
+                                case 3:
+                                    alert("Pista uno");
+                                    alert(pista_uno);
+                                    break;
+                                case 2:
+                                    alert("Pista dos")
+                                    alert(pista_dos);
+                                    break;
+                                case 1:
+                                    alert("Pista tres")
+                                    alert(pista_tres);
+                                    break;
+
+                            }
+                        }
+                    }
+                    document.getElementById("resultado").innerHTML = "La respuesta era: <strong>" + respuesta + "</strong>"
+                }
+            }
+        </script>
+    </div>
+</body>
+
+</html>
